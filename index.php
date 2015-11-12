@@ -13,11 +13,9 @@
 
 get_header(); ?>
 
-	<div id="Spacer_0" class="spacing col-lg-3">
 	
-	</div>
 
-	<div id="primary" class="content-area col-lg-10">
+	<div id="primary" class="content-area col-lg-11">
 		<main id="main" class="site-main" role="main">
 		
 		<h3>Full Archives</h3>
@@ -28,5 +26,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

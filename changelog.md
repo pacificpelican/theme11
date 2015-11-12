@@ -117,3 +117,7 @@ Nov. 12, 2015
 -make front page one long list of all story titles each linking to a single post
 -responsiveness adjustments
 
+v0.1.1
+Nov. 12, 2015
+-display widgets on front page as well as perma-link pages
+
