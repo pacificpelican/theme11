@@ -89,7 +89,7 @@ function greenlake_posted_on() {
 
 	$byline = sprintf(
 		_x( 'by %s', 'post author', 'greenlake' ),
-		'<span class="author"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		'<span class="author">' . esc_html( get_the_author() ) . '</span>'
 	);
 
 	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
@@ -105,15 +105,41 @@ function greenlake_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
+		echo "<span class='ct_section'>";
+		if ( get_the_category() && greenlake_categorized_blog() ) {
+		//	printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'greenlake' ) . '</span>', $categories_list );
+		echo "Category: ";
+		}
+		
+		foreach((get_the_category()) as $category) {
+			echo "<span class='ct_2'>";
+  		  echo $category->cat_name . ' ';
+  		  echo "</span>";
+		}
 		$categories_list = get_the_category_list( __( ', ', 'greenlake' ) );
 		if ( $categories_list && greenlake_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'greenlake' ) . '</span>', $categories_list );
+		//	printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'greenlake' ) . '</span>', $categories_list );
 		}
-
+		echo "</span>";
+		
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', __( ', ', 'greenlake' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s ', 'greenlake' ) . '</span>', $tags_list );
+		echo "<span class='tg_section'>";
+			echo "Tagged: ";
+//			echo get_the_tag_list();
+			$posttags = get_the_tags();
+if ($posttags) {
+	
+	foreach($posttags as $tag) {
+		echo "<span class='tg_2'>";
+		echo $tag->name . ' '; 
+		echo "</span>";
+	}
+	
+}
+		echo "</span>";
+		//	printf( '<span class="tags-links">' . __( 'Tagged %1$s ', 'greenlake' ) . '</span>', $tags_list );
 		}
 	}
 

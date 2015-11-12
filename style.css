@@ -1,16 +1,16 @@
 /*
-Theme Name: Theme 10
-Theme URI: http://djmcloud.danieljmckeown.com/theme10/
+Theme Name: Theme 11
+Theme URI: http://djmcloud.danieljmckeown.com/theme11/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
-Description: Love Birds Consulting theme #10 from Oct. 2015
-Version: 0.0.2
+Description: An archives style theme
+Version: 0.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: greenlake
 Tags: pacificpelican.us, responsive
 
-Theme 10 is a fork of Green Lake theme (http://djmcloud.danieljmckeown.com/greenlake/)
+Theme 11 is a fork of Green Lake theme (http://djmcloud.danieljmckeown.com/greenlake/)
 Green Lake is based on free software including:
 Underscores [_s] v1.0.0 http://underscores.me/ (C) 2012-2015 Automattic, Inc.
 
@@ -43,6 +43,7 @@ It is offered with the hope that it's useful but without guarantee.
 	12.1 Captions
 	12.2 Galleries
 13.0 Ryukyu
+14.0 Spacing Adjustments
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -1749,3 +1750,123 @@ td {
 	text-align: right;
 }
 
+/*--------------------------------------------------------------
+14.0 Spacing Adjustments
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 800px) {
+main.site-main {
+	margin-left: 60px;
+	margin-top: -50px;
+	}
+	h1.site-title {
+		margin-top: 16px;
+		margin-left: 70px;
+		color: gray;
+	}
+	h1.site-title a:visited {
+		color: gray !important;
+	}
+}
+	
+@media screen and (max-width: 799px) {
+	main.site-main {
+		margin-left: 15px;
+		margin-top: -55px;
+	}
+	h1.entry-title {
+		font-size: 22px;
+		margin-top: 22px;
+		margin-bottom: 24px;
+	}
+	h1.site-title {
+		font-size: 30px;
+		margin-top: 14px;
+		margin-left: 26px;
+		margin-bottom: 28px;
+		color: gray;
+	}
+	h1.site-title a:visited {
+		color: SlateGray !important;
+	}
+}
+	
+footer {
+	padding-top: 10px;
+	padding-bottom: 7px;
+	}
+	
+footer.site-footer {
+	background: SeaShell;
+	padding-left: 30px;
+	}
+	
+footer.entry-footer {
+	font-family: "Open Sans", "Ubuntu", sans-serif;
+	font-size: 16px;
+	}
+	
+#secondary {
+	margin-left:65px;
+	}
+	
+.widget-area li {
+	list-style-type:none;
+	margin-left: -80px;
+	}
+	
+main {
+	margin-bottom: 20px;
+	}
+	
+main .entry-content a {
+	text-decoration: underline;
+	}
+	
+.ct_section {
+	margin-right: 13px;
+	}
+	
+.tg_section {
+	margin-right: 13px;
+	}
+
+.tg_2 {
+	margin-right: 4px;
+	}
+	
+.entry-meta {
+	margin-top: -20px;
+	margin-bottom: -30px;
+	font-family: "Open Sans", "Ubuntu", sans-serif;
+	font-size: 13px;
+	}
+
+nav li {
+	margin-right: 6px;
+	margin-left: 6px;
+	color: LightCyan;
+		}
+		
+nav li a, nav li a:visited {
+	color: SandyBrown;
+		}
+
+.entry-content {
+	margin-top: 41px;
+	}
+	
+article p {
+	margin-top: -2px;
+}
+
+nav.main-navigation {
+	background: snow;
+	}
+	
+audio {
+    background-color: #95B9C7;
+    color: SpringGreen;
+}
+
+	

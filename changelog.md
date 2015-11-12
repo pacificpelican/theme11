@@ -1,4 +1,4 @@
-changelog for Green Lake theme http://djmcloud.danieljmckeown.com/greenlake/
+changelog for Green Lake theme (the predecessor theme to Theme 10) http://djmcloud.danieljmckeown.com/greenlake/
 
 v0.0.1
 January 26, 2015
@@ -98,3 +98,22 @@ May 17, 2015
 v0.3.3
 Sept. 28, 2015
 -change the_posts_navigation() to the_posts_pagination() in index.php
+
+------in October 2015 Theme 10 was forked from Green Lake.  version numbers started over again for Theme 10-------
+
+changelog for Theme 10:
+
+v0.0.2
+Oct. 16, 2015
+-add Ryukyu (http://danmckeown.info/code/ryukyu) CSS code to style.css style sheet
+
+------in October 2015 Theme 11 was forked from Theme 10.-------
+
+changelog for Theme 11:
+
+v0.1.0
+Nov. 12, 2015
+-styling adjustments in CSS
+-make front page one long list of all story titles each linking to a single post
+-responsiveness adjustments
+

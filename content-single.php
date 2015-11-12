@@ -24,6 +24,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php greenlake_entry_footer(); ?>
+		<?php theme11_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
